@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fale Conosco - Viagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #155ab2;
+        }
+
+        footer {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fale Conosco</h1>
+</header>
+
+<div class="container">
+    <h2>Entre em contato com nossa equipe de viagens</h2>
+    <p>Tem alguma dúvida? Precisa de mais informações sobre nossos pacotes de viagem? Preencha o formulário abaixo e entraremos em contato com você o mais breve possível!</p>
+
+    <form>
+        <div class="form-group">
+            <label for="nome">Seu Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Seu E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Sua Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Viagens. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,898 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5dc;
+}
+
+
+
+.dealworld{
+    padding-left: 18%;
+    padding-top: -6%;
+    
+}
+
+span{
+    color: rgb(13, 13, 236);
+}
+
+
+    
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    padding-left: 70%;
+    justify-content: space-around;
+    padding-right: 12%;
+    margin-top: -26px; 
+    
+
+}
+
+
+
+.cruzeiro{
+    display: flex;
+    width: 25%;
+    top: 20px;
+    
+    margin-left: 8%; /* Ajuste o valor conforme necessário */
+    /* Se você quiser afastar do topo ou da base também, pode adicionar: */
+    margin-top: 70px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -20%;
+    
+}
+    
+
+
+.disney{
+    display: flex;
+    margin-left: 38%; /* Ajuste o valor conforme necessário */
+    /* Se você quiser afastar do topo ou da base também, pode adicionar: */
+    position: relative;
+    top: -276px; /* Ajuste o valor conforme necessário */
+    width: 26%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+    
+    
+
+.brasil{
+    display: flex;
+    margin-left: 65%;
+    width: 30%; /* Aumenta a largura em 20% */
+    height: auto; /* A altura será ajustada automaticamente */
+    margin-top: -30%;
+    
+
+}
+    
+    
+  
+
+    
+
+    
+    
+    
+
+
+
+.left-side, .right-side {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Largura das laterais */
+}
+
+.left-side {
+    left: 0;
+     /* Cor da lateral esquerda */
+}
+
+.right-side {
+    right: 0;
+     /* Cor da lateral direita */
+}    
+
+
+.primeiro-paragrafo{
+    color: #DF6951;
+    padding-top:5%;
+    margin-left: 12%;
+    font-size: 20px;
+}
+
+.segundo-paragrafo{
+    color: #181E4B;
+    padding-top: 2%;
+    margin-left: 12%;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.h4{
+    line-height: 30px;
+    color: #5E6282;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+.imagem-propaganda{
+    margin-left: 50%;
+    position: absolute;
+    top: 28px;
+
+}
+
+.find-out-more{
+    margin-left: 7%;
+    margin-top: 35px;
+}
+
+.youtube-logo {
+    width: 80px; 
+    height: auto; 
+    margin-right: 20px; 
+    transform: translateY(-60px);
+    margin-left: 5%;
+    
+    
+}
+    
+    
+.logo-text {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #686D77; 
+    position: relative; 
+    top: -80px; 
+    
+    
+    
+    
+}
+    
+.topselling{
+    color: #5E6282;
+    margin-left: 43%;
+    padding-top: 10%;
+}    
+
+.topdestinations{
+    color: #14183E;
+    padding-top: 1%;
+    margin-left: 40%;
+}
+
+
+
+.roma,.london,.europa{
+    width: 300px; /* Ajusta o tamanho da imagem */
+    display: block;
+    margin: 0 auto;
+    margin-left: 20%;
+    padding-top: 2%; 
+}
+
+.london{
+    margin-left: 38%;
+    margin-top: -23%;
+    border: none;
+    background: none;
+    
+}
+
+.europa{
+    margin-left: 57%;
+    
+    margin-top: -23%;
+}
+
+.Testimonials{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.text-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-choose > h1 > span {
+    color: #7f2736;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 180%;
+  }
+  .text-choose > h1 {
+    color: #080809;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 180%;
+  }
+  .text-choose > p {
+    width: 858.49px;
+    height: 125.398px;
+    color: #2c2d32;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  
+  .choose-cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 122.72px;
+  }
+  .choose-cards > .choose-card {
+    position: relative;
+    width: 430px;
+    height: 405px;
+    margin-bottom: 184px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+  }
+  .choose-card > h1 {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    width: 340px;
+    height: 42px;
+    margin-top: 115px;
+    margin-left: 50px;
+  }
+  .choose-card > p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    width: 325px;
+    height: 136px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  .choose-card > img {
+    position: relative;
+    top: -25px;
+  }
+  .choose-card > span {
+    position: absolute;
+    top: -50px;
+    left: 167px;
+    width: 96px;
+    height: 94px;
+    border-radius: 50%;
+  }
+  .choose-card > .blues-circle {
+    background-color: #4b40c5;
+  }
+  .choose-card > .yellow-circle {
+    background-color: #f0bb1f;
+  }
+  .choose-card > .orange-circle {
+    background-color: #f15a2b;
+  }
+
+
+ 
+.rectangle-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 195.28px;
+    width: 1350.493px;
+    height: 484.792px;
+    border-radius: 171.586px 26.602px 26.602px 26.602px;
+    background-color: #f9f7fe;
+  }
+  .rectangle-content > h2 {
+    width: 991px;
+    height: 161px;
+    color: var(--textclr, #5e6282);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 71.827px;
+    margin-left: 194.58px;
+    margin-top: 107px;
+  }
+  .rectangle-content > .email-subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .rectangle-content > form {
+    margin-top: 48.27px;
+  }
+  .rectangle-content > form > .sub-button {
+    width: 207.768px;
+    height: 78.49px;
+    margin-right: 55.2px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    border-radius: 13.301px;
+    background: var(
+      --gradient,
+      linear-gradient(180deg, #ff946d 0%, #ff7d68 100%)
+    );
+  }
+  .rectangle-content > form > #email {
+    width: 485.947px;
+    height: 78.49px;
+    margin-right: 27.7px;
+    flex-shrink: 0;
+    border-radius: 13.301px;
+    background: var(--white, #fff);
+    border: none;
+  }
+  .rectangle-content > .email-subscribe > label {
+    display: flex;
+    align-items: center;
+    left: 320px;
+    position: absolute;
+  }
+  .rectangle-content > .email-subscribe > label > p {
+    color: var(--textcolor, #39425d);
+    font-family: Montserrat;
+    font-size: 18.622px;
+    font-weight: 400;
+    margin-left: 15.92px;
+  }
+  .rectangle-content > .email-subscribe {
+    position: relative;
+  }
+  .rectangle-content > img {
+    position: absolute;
+    left: auto;
+    right: -33px;
+  }
+  
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 113.65px;
+  }
+  .footer-container > p {
+    color: var(--textclr, #5e6282);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 124.5%;
+    text-align: start;
+  }
+  .discover-app {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .discover-app > h2 {
+    color: var(--textclr, #5e6282);
+    font-size: 26.602px;
+    font-weight: 500;
+    line-height: 124.5%;
+    letter-spacing: 0.133px;
+    margin-top: 34.58px;
+    margin-right: 86.74px;
+  }
+  .social-icons {
+    margin-right: 81.31px;
+  }
+  .social-icons > span {
+    position: relative;
+  }
+  .social-icons > span > .insta-icon {
+    position: absolute;
+    top: -40px;
+    left: 33px;
+  }
+  .store-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 21.54px;
+    margin-right: 34.76px;
+  }
+  .play-store {
+    display: flex;
+    align-items: center;
+    width: 142.323px;
+    height: 46.554px;
+    border-radius: 23.277px;
+    background: var(--black, #080809);
+    position: relative;
+  }
+  .play-store > .logo {
+    position: absolute;
+    top: -38px;
+    left: -27px;
+  }
+  .play-store > .text {
+    position: absolute;
+    left: 55px;
+  }
+  .table-content {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  .table-content > .company {
+    margin-right: 76.75px;
+    margin-left: 99.74px;
+  }
+  .table-content > .contact {
+    margin-right: 76.75px;
+  }
+  .table-content > .more {
+    margin-right: 76.75px;
+  }
+  .contents > span > h1 {
+    color: var(--black, #080809);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 124.5%;
+  }
+  .contents > span > p {
+    color: var(--textclr, #5e6282);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 124.5%;
+  }
+  
+  .copyRights {
+    color: var(--textclr, #5e6282);
+    font-size: 18.622px;
+    font-weight: 500;
+    line-height: 124.5%;
+    text-align: center;
+  }
+
+
+  .gmail{
+    width: 22px;
+  }
+
+  
+
+
+
+
+
+
+
+
+  .ticket-options, .trip-options, .package-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ticket-option, .trip-option, .package-option {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+
+  button, .menu a {
+    position: relative;
+    z-index: 10;
+  }
+
+
+  .menu a {
+    display: inline-block;
+    padding: 10px 15px; /* Aumenta o tamanho de clique */
+  }
+ 
+
+
+
+
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+.menu a:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+
+
+
+
+.container {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px; /* Altere esse valor conforme necessário para mover para baixo */
+}
+
+/* Estilo dos cartões */
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Imagem do cartão */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteúdo do cartão */
+.card-content {
+  padding: 20px;
+}
+
+/* Título do cartão */
+.card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Descrição do cartão */
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Botão "Saiba Mais" */
+.card-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito no botão ao passar o mouse */
+.card-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
+/* Container dos cartões */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Estilo dos cartões */
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Imagem do cartão */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteúdo do cartão */
+.card-content {
+  padding: 20px;
+}
+
+/* Título do cartão */
+.card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Descrição do cartão */
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Botão "Saiba Mais" */
+.card-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito no botão ao passar o mouse */
+.card-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Nova seção com as imagens */
+.image-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;  /* Espaçamento acima das imagens */
+}
+
+/* Estilo das imagens */
+.image-item {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;  /* Faz com que as imagens se ajustem sem distorcer */
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* Container principal que irá agrupar os cartões */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Estilo dos cartões */
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Imagem do cartão */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Conteúdo do cartão */
+.card-content {
+  padding: 20px;
+}
+
+/* Título do cartão */
+.card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Descrição do cartão */
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Botão "Saiba Mais" */
+.card-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito no botão ao passar o mouse */
+.card-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Nova seção com 3 imagens e descrições */
+.new-image-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Cada nova imagem com a descrição */
+.new-image-card {
+  text-align: center;
+  width: 300px;
+  background-color: #fff;  /* Fundo branco */
+  border-radius: 10px;  /* Borda arredondada */
+  overflow: hidden;  /* Garante que a borda arredondada seja aplicada também nas imagens */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra para as imagens */
+  transition: transform 0.3s ease-in-out;  /* Efeito de transição para o hover */
+}
+
+/* Efeito de hover nas imagens */
+.new-image-card:hover {
+  transform: translateY(-10px);  /* Levanta um pouco a imagem ao passar o mouse */
+}
+
+/* Estilo da nova imagem */
+.new-image-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;  /* Ajusta as imagens para preencher o espaço */
+  border-bottom: 5px solid #007bff;  /* Borda entre a imagem e a descrição */
+}
+
+/* Descrição da nova imagem */
+.new-image-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Ajuste de estilo para os links na barra de navegação */
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #007bff; /* Cor de fundo ao passar o mouse */
+  color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Garantindo que as seções de destino sejam flexíveis e responsivas */
+.destination-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilo para as imagens */
+.destination-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+

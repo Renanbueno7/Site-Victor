@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/xlsx/xlsx.js"></script> <!-- Biblioteca XLSX -->
+    <!-- <script src="scripts/orders.js" type="module" defer></script>
+</head>
+<body>
+    <main class="product main-content container">
+        <div class="product text-container">
+            <h2 class="main-text">Pedidos</h2>
+            <p>Relação de pedidos realizados:</p>
+        </div>
+
+        <section class="product text-container">
+            <div id="orders">
+                <div class="grid_col_1" id="order-list">
+                    <!-- A lista de pedidos será exibida aqui -->
+                </div>
+<!-- 
+                <div class="grid_col_2">
+                    <button class="button checkout_btn" id="export-button">EXPORTAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> --> 
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos de Viagem</title>
+    <link rel="stylesheet" href="style.css"> <!-- Seu CSS -->
+    <!-- Inclusão da biblioteca XLSX para exportar para Excel -->
+    
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos de Viagem</title>
+    <link rel="stylesheet" href="style.css"> <!-- Seu CSS -->
+    <!-- Inclusão da biblioteca XLSX para exportar para Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Exibição dos Produtos -->
+        <div class="card" data-produto-id="1">
+            <img src="./assets/image/eiffel-tower-sunrise1.webp" alt="Imagem de Destino" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Paris</h3>
+                <p class="card-description">R$ 620.00 - 10x de R$ 62.00 s/juros</p>
+                <!-- Link para a página de detalhes de Paris -->
+                <a href="destinos/paris.html" class="card-btn">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card" data-produto-id="2">
+            <img src="./assets/image/desktop-wallpaper-new-york-statue-of-liberty-1152x864-statue-of-liberty.jpg" alt="Imagem de Destino" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Nova York</h3>
+                <p class="card-description">R$ 620.00 - 10x de R$ 62.00 s/juros</p>
+                <!-- Link para a página de detalhes de Nova York -->
+                <a href="destinos/novayork.html" class="card-btn">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card" data-produto-id="3">
+            <img src="./assets/image/toquio-templo.webp" alt="Imagem de Destino" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Tóquio</h3>
+                <p class="card-description">R$ 620.00 - 10x de R$ 62.00 s/juros</p>
+                <!-- Link para a página de detalhes de Tóquio -->
+                <a href="destinos/toquio.html" class="card-btn">Saiba Mais</a>
+            </div>
+        </div>
+
+        <!-- Botão de Exportação para Excel -->
+        <button id="export-button" class="button">Exportar para Excel</button>
+    </div>
+
+    <script>
+        // Dados dos produtos (pode ser substituído por dados reais ou dados dinâmicos)
+        const produtos = [
+            { id: 1, titulo: "Paris", preco: 620.00, descricao: "Pacote para Paris", imagem: "./assets/image/eiffel-tower-sunrise1.webp" },
+            { id: 2, titulo: "Nova York", preco: 620.00, descricao: "Pacote para Nova York", imagem: "./assets/image/desktop-wallpaper-new-york-statue-of-liberty-1152x864-statue-of-liberty.jpg" },
+            { id: 3, titulo: "Tóquio", preco: 620.00, descricao: "Pacote para Tóquio", imagem: "./assets/image/toquio-templo.webp" }
+        ];
+    
+        // Função para exportar os dados para Excel
+        function exportarParaExcel() {
+            const wb = XLSX.utils.book_new();
+            
+            // Dados dos produtos para exportação
+            const dados = [
+                ["ID", "Título", "Preço", "Descrição"], // Cabeçalho
+                ...produtos.map(p => [
+                    p.id, 
+                    p.titulo, 
+                    p.preco, 
+                    p.descricao, 
+                ])
+            ];
+    
+            const ws = XLSX.utils.aoa_to_sheet(dados);
+            
+            // Adiciona a planilha ao arquivo Excel
+            XLSX.utils.book_append_sheet(wb, ws, "Produtos");
+            
+            // Gera o arquivo Excel e faz o download
+            XLSX.writeFile(wb, "produtos.xlsx");
+        }
+    
+        // Adiciona o evento de clique ao botão "Exportar para Excel"
+        document.getElementById("export-button").addEventListener("click", exportarParaExcel);
+    </script>
+</body>
+
+</html>
