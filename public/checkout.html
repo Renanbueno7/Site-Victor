@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css"> <!-- seu CSS -->
+    <script src="scripts/checkout.js" defer></script> <!-- JS para essa página -->
+</head>
+<body>
+    <h1>Finalizar Compra</h1>
+    
+    <!-- Exibe os itens do carrinho -->
+    <div id="checkout">
+        <div class="grid_col_1">
+            <h2>Produto Selecionado</h2>
+            <div id="cart-items"></div>
+        </div>
+        <div id="total-price">
+            <h3>Preço Total: <span id="total"></span></h3>
+        </div>
+
+        <!-- Formulário para inserir os dados de pagamento -->
+        <form id="checkout-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit">Finalizar</button>
+        </form>
+    </div>
+
+    <script>
+        // Recuperar os dados do produto do localStorage
+        const product = JSON.parse(localStorage.getItem('checkoutProduct'));
+        if (product) {
+            // Exibir os detalhes do produto na página
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = `
+                <div>
+                    <img src="${product.imagemProduto}" alt="${product.tituloProduto}" style="width: 150px; height: auto;">
+                    <h3>${product.tituloProduto}</h3>
+                    <p>Quantidade: ${product.quantidade}</p>
+                    <p>Preço: ${product.preco}</p>
+                </div>
+            `;
+            // Exibir o preço total
+            const totalPrice = document.getElementById('total');
+            totalPrice.textContent = `${product.preco} x ${product.quantidade}`;
+        }
+
+        // Enviar o formulário (simulação de envio)
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Compra Finalizada!'); // Simulação de finalização de compra
+        });
+    </script>
+
+</body>
+</html>
